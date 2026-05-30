@@ -1,0 +1,19 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Hover effect for cards */
+.plan-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 1, 14, 0.2);
+}
+
+/* Navbar brand hover */
+.navbar-brand:hover {
+  color: #4907ff;
+}
