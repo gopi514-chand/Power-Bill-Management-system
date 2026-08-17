@@ -162,7 +162,7 @@ class BillCalculator {
     `;
 
     summaryDiv.innerHTML = html;
-    document.getElementById('summaryCard').style.display = 'block';
+    document.getElementById('summaryCard').classList.remove('hidden-card');
     this.showStatus('Bill calculated successfully!', 'success');
   }
 

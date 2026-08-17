@@ -124,7 +124,7 @@ class BillingReports {
 
     if (this.filteredBills.length === 0) {
       tbody.innerHTML = '<tr><td colspan="9" class="text-center">No bills found.</td></tr>';
-      document.getElementById('pagination').style.display = 'none';
+      document.getElementById('pagination').classList.add('hidden-pagination');
       return;
     }
 
@@ -168,9 +168,9 @@ class BillingReports {
     // Display pagination
     if (totalPages > 1) {
       this.displayPagination(totalPages);
-      document.getElementById('pagination').style.display = 'block';
+      document.getElementById('pagination').classList.remove('hidden-pagination');
     } else {
-      document.getElementById('pagination').style.display = 'none';
+      document.getElementById('pagination').classList.add('hidden-pagination');
     }
   }
 
